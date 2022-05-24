@@ -1,7 +1,8 @@
 package berkeleydb
 
 /*
-#cgo LDFLAGS: -ldb
+// #cgo freebsd CFLAGS: -I/usr/local/include/db5
+// #cgo freebsd LDFLAGS: -L/usr/local/lib/db5/ -ldb
 #include <db.h>
 #include "bdb.h"
 */

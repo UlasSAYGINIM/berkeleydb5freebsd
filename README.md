@@ -1,15 +1,21 @@
-[![GoDoc](https://godoc.org/github.com/jsimonetti/berkeleydb?status.svg)](https://godoc.org/github.com/jsimonetti/berkeleydb)
-[![Travis](https://api.travis-ci.org/jsimonetti/berkeleydb.svg?branch=master)](https://travis-ci.org/jsimonetti/berkeleydb)
+# Use With CAUTION and expect something can give error(s). PLEASE BE CAREFUL and TEST YOUR CODE WISELY #
+This library is tested with code below on FreeBSD 13.1 and it is worked.
+No Further testing applied, because of this, you CAN NOT completely trust this package!!!
+I just needed this package to test another application and i created this fork ,in order to help FreeBSD users for Golang Projects which needs this package.
+
+This is the fork of github.com/jsimonetti/berkeleydb which is not maintained anymore but now with this fork, it seems working on FreeBSD 13.1.
+
+This application now using Berkeley DB version 5.x you need to instal it if your system does not have it.
 
 
-# BEWARE #
-This library is unmaintained and may stop working at any time.
 
 ### BerkeleyDB Bindings
 
 This package provides BerkeleyDB wrappers for the C library using `cgo`.
 
-To build, you will need a relatively recent version of BerkeleyDB.
+To build, you will need a 5.x version of BerkeleyDB.
+
+It is tested with go version go1.18.2 freebsd/amd64
 
 
 
@@ -21,7 +27,7 @@ package main
 import (
         "fmt"
 
-        "github.com/jsimonetti/berkeleydb"
+        "github.com/UlasSAYGINIM/berkeleydb5freebsd"
 )
 
 func main() {

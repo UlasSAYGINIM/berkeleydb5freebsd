@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/jsimonetti/berkeleydb"
+	"github.com/UlasSAYGINIM/berkeleydb5freebsd"
 )
 
 const TestDirectory = "./TEST_ENV"
